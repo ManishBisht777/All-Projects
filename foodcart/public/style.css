@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: rgb(209, 63, 63);
+}
+
+nav 
+{
+  background: rgb(88, 189, 236);
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.logo
+{
+    margin: 0 20px;
+}
+
+.navbar .main-nav ul {
+  position: relative;
+  display: flex;
+  flex-direction:row;
+  list-style: none;
+}
+.navbar .main-nav ul li
+{
+    margin: 0 20px;
+}
+.navbar .main-nav ul li a
+{
+    text-decoration: none;
+}
+
+#items
+{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item
+{
+  position: relative;
+  margin: 20px;
+}
+.item .image img
+{
+  height: 300px;
+}
+
+.item .price
+{
+  position: absolute;
+  height: 300px;
+  width: 240px;
+  top: 0;
+  right: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: rgba( 255, 255, 255, 0.10 );
+    backdrop-filter: blur( 4.5px );
+}
+
+.price span:nth-child(1)
+{
+  position: absolute;
+  top: 50px;
+  font-family: cursive;
+  font-size: large;
+  color: #fff;
+}
+.price span:nth-child(2)
+{
+  position: absolute;
+  top: 85px;
+  font-family: cursive;
+  font-size: large;
+  color: #fff;
+}
+.item .add
+{
+  position: absolute;
+}
+
+.item:hover .price
+{
+  display: flex;
+  animation: animate 0.3s ease-in-out;
+}
+
+@keyframes animate {
+  0%
+  {
+    clip-path: circle(0% at 100% 0%);
+  }
+  100%
+  {
+  clip-path: circle(90% at 100% 0%);
+  }
+}
+
+.add
+{
+  position: absolute;
+    bottom: 3px;
+    height: 100px;
+    width: 100px;
+    padding: 5px;
+    display: none;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+    border-radius: 0% 100% 100% 0% / 0% 100% 0% 100% ;
+    background: rgba( 213, 141, 41,1);
+}
+.add button
+{
+  background: transparent;
+    border: none;
+    position: absolute;
+    top: 69px;
+    left: 18px;
+}
+
+.item:hover .add
+{
+  display: flex;
+  animation: animate2 0.3s ease-in-out;
+}
+
+@keyframes animate2
+{
+  0%
+  {
+    clip-path: circle(0% at 0% 100%);
+  }
+  100%
+  {
+    clip-path: circle(70% at 0% 100%);
+  }
+}
+
+
+
+
+.product-container
+{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-header
+{
+  display: flex;
+}
+.product-header h5
+{
+  margin: 10px;
+}
+.products
+{
+  display: flex;
+}

@@ -1,0 +1,527 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  min-height: 1000px;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 100px;
+  z-index: 1000;
+  transition: 0.6s;
+}
+
+header.sticky {
+  padding: 5px 100px;
+  background: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+header .logo {
+  position: relative;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.6s;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li {
+  position: relative;
+  list-style: none;
+}
+
+header ul li a {
+  position: relative;
+  text-decoration: none;
+  margin: 0 15px;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 300;
+  transition: 0.6s;
+}
+
+header ul li a:hover {
+  color: rgb(105, 217, 231);
+  transition: 0.3s;
+}
+
+header.sticky .logo,
+header.sticky ul li a {
+  color: #000;
+}
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: #000;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner h2 {
+  color: #fff;
+  font-size: 90px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1em;
+}
+
+.banner h2 span {
+  color: rgb(111, 43, 201);
+}
+
+.sec {
+  background: #fff;
+  padding: 100px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec .content {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.mxw800p {
+  max-width: 800px;
+  margin: 0 auto;
+}
+h3 {
+  font-size: 40px;
+  font-weight: 200;
+  margin: 10px;
+}
+
+p {
+  position: relative;
+  font-size: 18px;
+  font-weight: 300px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  padding: 10px 30px;
+  background: #000;
+  text-decoration: none;
+  color: #fff;
+}
+
+.services {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  margin-top: 45px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.iconbx img {
+  height: 200px;
+  width: 200px;
+  margin-bottom: 20px;
+}
+.box {
+  width: 31%;
+  margin: 10px 10px;
+  padding: 20px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+}
+
+.box:hover {
+  background: rgb(238, 174, 202);
+  background: linear-gradient(
+    180deg,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  transform: translatey(-20px);
+  transition: 0.4s;
+}
+
+.box:nth-child(2):hover {
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    180deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  transform: translatey(-20px);
+  transition: 0.4s;
+}
+
+.services .box h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.stats {
+  background: #000;
+  padding-top: 250px;
+}
+.stats h3,
+.stats p {
+  color: #fff;
+}
+
+.statbox {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.statbox h2 {
+  color: #fff;
+  font-size: 36px;
+}
+.statbox h4 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.workbx {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin: 20px;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.workbx .brand {
+  position: relative;
+  min-width: 250px;
+  background: #4978ff;
+  min-height: 250px;
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.workbx .brand:hover {
+  background: #000;
+  transition: 0.6s ease-in-out;
+}
+.workbx .brand a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.workbx .brand:hover a {
+  font-weight: 600;
+}
+
+.teambx {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.imgbx img {
+  height: 200px;
+  width: 200px;
+  margin-bottom: 20px;
+}
+.teambx .member {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+.teambx .member .details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  transition: 0.2s;
+  opacity: 0;
+}
+.teambx .member:hover .details {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+.teambx .member .details h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.teambx .member .details h2 span {
+  display: block;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.contact {
+  flex-direction: column;
+  background: #000;
+}
+.contact h3,
+.contact p {
+  color: #fff;
+}
+.contactform {
+  position: relative;
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
+}
+.contactform form {
+  width: 100%;
+}
+
+.contactform .row100 {
+  display: flex;
+  width: 100%;
+}
+.contactform .row100 .inputbx50 {
+  width: 50%;
+  margin: 0 20px;
+}
+.contactform .row100 .inputbx100 {
+  width: 100%;
+  margin: 0 20px;
+}
+.contactform .row100 textarea,
+.contactform .row100 input {
+  position: relative;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  width: 100%;
+  padding-top: 10px 0;
+  outline: none;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 20px 0;
+  resize: none;
+}
+
+.contactform .row100 textarea {
+  height: 100px;
+}
+.contactform .row100 textarea::placeholder,
+.contactform .row100 input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.contactform .row100 input[type="submit"] {
+  background: #fff;
+  color: #000;
+  max-width: 100px;
+  margin: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 500;
+}
+.sci {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+.sci ul {
+  display: flex;
+  flex-direction: row;
+}
+.sci ul li {
+  list-style: none;
+}
+.sci ul li a {
+  text-decoration: none;
+}
+.sci li a img {
+  height: 50px;
+  width: 50px;
+  margin: 20px;
+}
+.sci li a img:hover {
+  opacity: 0.5;
+}
+
+.copyright {
+  color: #fff;
+}
+.copyright a {
+  color: #fff;
+}
+
+.toggle {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .toggle {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  .toggle::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    width: 50px;
+    height: 2px;
+    background: #000;
+    z-index: 1;
+    box-shadow: 0 10px 0 #000;
+    transition: 0.5s;
+  }
+  .toggle::after {
+    content: "";
+    position: absolute;
+    bottom: 4px;
+    width: 50px;
+    height: 2px;
+    background: #000;
+    z-index: 1;
+    transition: 0.5s;
+  }
+
+  header,
+  .sticky {
+    padding: 5px 50px;
+    background: #fff;
+  }
+
+  header ul {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    overflow: auto;
+    background: #fff;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .active {
+    animation: animate 1s forwards;
+    width: 400px;
+    background: #4978ff;
+  }
+  @keyframes animate {
+    0% {
+      opacity: 0;
+      transform: translate(0, 0);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(-100px, 0);
+    }
+  }
+  header.active ul {
+    position: absolute;
+    left: 0;
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    padding-top: 20px;
+  }
+  header.active ul li a {
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 20px;
+  }
+
+  header .logo,
+  header ul li a {
+    color: #000;
+  }
+
+  .banner {
+    background-position: center;
+    width: 100%;
+  }
+  .banner h2 {
+    font-size: 60px;
+    padding: 0 50px;
+  }
+  .sec {
+    padding: 100px 50px 50px 50px;
+  }
+
+  .services .box {
+    width: 100%;
+  }
+
+  .stats {
+    padding-top: 250px;
+  }
+
+  .row100 {
+    flex-direction: columns;
+  }
+  .contactform .row100 .inputbx100,
+  .contactform .row100 .inputbx50 {
+    width: 100%;
+    margin: 0;
+  }
+
+  .sci {
+    margin: 20px;
+  }
+
+  .sci ul li a img {
+    font-size: 24px;
+  }
+}

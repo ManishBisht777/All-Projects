@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.firstpart {
+  background-color: #00adb5;
+  display: flex;
+  height: 42px;
+  width: 100%;
+  position: relative;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.secondpart {
+  display: flex;
+  position: relative;
+}
+.secondpart .navbar {
+  position: relative;
+  height: 89vh;
+  background: rgb(57, 70, 69);
+  background: linear-gradient(
+    94deg,
+    rgba(57, 70, 69, 0.9051995798319328) 0%,
+    rgba(34, 193, 195, 1) 66%,
+    rgba(207, 237, 253, 1) 99%
+  );
+  width: 150px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.secondpart .navbar::before {
+  content: "";
+  position: absolute;
+  height: 66vh;
+  left: 130px;
+  width: 2px;
+  background-color: #27aae1;
+  display: none;
+}
+.secondpart .navbar ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.secondpart .navbar ul li {
+  list-style: none;
+  margin: 10px 0px;
+  padding: 5px 13px;
+  border-radius: 3px;
+  transition: 0.3s ease;
+}
+.secondpart .navbar ul:nth-child(1) li:hover {
+  background: #00adb5;
+}
+.secondpart .navbar ul li:hover a {
+  color: #f0d9e7;
+  cursor: pointer;
+}
+.secondpart .navbar ul li a {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  color: #f3f0f0;
+}
+
+.navbar .toggle
+{
+  display: block;
+  position: relative;
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+  margin: 20px 0px;
+  transition: 0.2s;
+  background: #00adb5;
+}
+
+.navbar .toggle::before
+{
+  content: "";
+  position: absolute;
+  top: 4px;
+  width: 34px;
+  height: 2px;
+  transform: translateY(12px) rotate(45deg);
+  transition: 0.2s;
+  background: #f0d9e7;
+}
+
+.navbar .toggle::after
+{
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  width: 34px;
+  height: 2px;
+  background: #f0d9e7;
+  transition: 0.2s;
+  transform: translateY(-12px) rotate(-45deg);
+}
+
+.navbar .close
+{
+  display: block;
+  position: relative;
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+  margin: 20px 0px;
+  transition: 0.2s;
+  background: transparent;
+}
+
+.navbar .close::before
+{
+  content: "";
+  position: absolute;
+  top: 4px;
+  width: 34px;
+  height: 2px;
+  background: #000;
+  transform: translateY(12px) rotate(0deg);
+  z-index: 1;
+  box-shadow: 0 12px 0 #000;
+  transition: 0.5s;
+}
+
+.navbar .close::after
+{
+  content: "";
+  position: absolute;
+  top: 4px;
+  width: 34px;
+  height: 2px;
+  transform: translateY(0px) rotate(0deg);
+  background: #000;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+
+.navbar .main-nav-close {
+  display: none;
+  opacity: 0;
+}
+.navbar .social-close {
+  display: none;
+  opacity: 0;
+}
+
+.secondpart .navbar ul li img {
+  width: 30px;
+}
+
+.secondpart .home {
+  width: 100%;
+  background-color: #cfedfd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.secondpart .home .section1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+.secondpart .home .section1 .heading {
+  margin: 0px 50px;
+  position: relative;
+}
+
+.secondpart .home .section1 .heading h1 {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  color: #00adb5;
+  font-size: 4rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 7px 0px;
+}
+
+.secondpart .home .section1 .image {
+  margin: 0px 50px;
+  position: relative;
+}
+
+.secondpart .home .section1 .image img {
+  width: 300px;
+  position: relative;
+}
+
+.secondpart .home .section1 .image::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 176px;
+  height: 150px;
+  width: 150px;
+  border: 2px solid cadetblue;
+}
+
+.secondpart .home .section2 {
+  position: relative;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 10px 38px #b1d7df, -10px -10px 38px #cffdff;
+  margin-bottom: 20px;
+}
+
+.secondpart .home .section2 ul {
+  display: flex;
+  margin: 60px 0px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.secondpart .home .section2 ul li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 25px;
+  align-items: center;
+  flex-wrap: wrap;
+  min-width: 131px;
+}
+.secondpart .home .section2 ul li .data {
+  font-family: "Roboto", sans-serif;
+  color: #444444;
+  font-weight: 600;
+  font-size: medium;
+}
+.secondpart .home .section2 .counter {
+  font-size: 45px;
+  margin: 5px 0;
+  color: #00adb5;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.thirdpart {
+  background-color: black;
+  height: 30px;
+  width: 100%;
+}
+
+@media (max-width: 1050px) {
+  .firstpart {
+    display: none;
+  }
+  .secondpart {
+    flex-direction: column;
+  }
+  .secondpart .navbar {
+    width: 100%;
+    height: fit-content;
+    padding-top: 15px;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+  }
+  .secondpart .navbar::before {
+    display: none;
+  }
+  .secondpart .navbar .toggle {
+    position: absolute;
+    top: 5px;
+    left: 32px;
+  }
+  .navbar .main-nav-close {
+    height: 0px;
+  }
+  .navbar .social-close {
+    height: 0px;
+  }
+  .secondpart .home .section1 {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 400px) {
+  .secondpart .home .section1 .heading h1 {
+    font-size: 2rem;
+  }
+  .secondpart .home .section1 .image img {
+    width: 150px;
+  }
+  .secondpart .home .section1 .image::before {
+    width: 50px;
+    height: 50px;
+    top: 3px;
+    left: 97px;
+  }
+}

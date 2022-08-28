@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Staatliches", cursive;
+}
+.loader {
+  display: flex;
+  background: #599dd9;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+}
+
+.loader img:nth-child(1) {
+  animation: letsgo 3s linear forwards;
+  animation-delay: 0.3s;
+}
+.loader img:nth-child(2) {
+  height: 10px;
+  width: 98%;
+  position: absolute;
+  top: 348px;
+  margin-left: 20px;
+}
+.loader img:nth-child(3) {
+  position: absolute;
+  top: 231px;
+  height: 124px;
+  right: 27px;
+}
+
+@keyframes letsgo {
+  0% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(1100px);
+  }
+}
+
+.loader .title {
+  position: absolute;
+  left: 400px;
+  top: 80px;
+}
+.loader .title p:nth-child(1) span:nth-child(1) {
+  font-size: 5em;
+  color: #bf396a;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+}
+.loader .title p:nth-child(2) span:nth-child(1) {
+  font-size: 5em;
+  color: #f2da91;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+}
+.loader .title p:nth-child(1) span:nth-child(2) {
+  margin-left: 5px;
+  font-size: 5rem;
+  color: #f2da91;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+}
+.loader .title p:nth-child(2) span:nth-child(2) {
+  margin-left: 5px;
+  font-size: 5rem;
+  color: #bf396a;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+}

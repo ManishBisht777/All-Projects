@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  width: 100%;
+}
+.home {
+  height: 100vh;
+  background: rgba(155, 82, 224, 0.671);
+}
+
+.name {
+  position: relative;
+  font-family: "Kiwi Maru", serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.name .logo {
+  justify-content: center;
+  text-align: center;
+  padding-top: 100px;
+}
+.name .logo h2 {
+  font-size: 3rem;
+}
+.name .about {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 600px;
+  padding: 20px 0;
+}
+
+.home .container .navbar {
+  position: absolute;
+  display: flex;
+  text-align: center;
+  height: 500px;
+  top: 92px;
+  background: #ffff;
+  border-radius: 50px;
+  align-items: center;
+  margin-left: 32px;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 30%);
+}
+
+.home .container .navbar ul li a img {
+  height: 50px;
+  width: 50px;
+  padding: 10px 10px;
+}
+.home .container .navbar ul {
+  position: relative;
+  list-style: none;
+}
+
+.home .container .navbar ul li a .title {
+  position: absolute;
+  left: 79px;
+  width: 117px;
+  background: white;
+  border-radius: 10px;
+  padding: 10px 5px;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 30%);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.home .container .navbar ul li:hover a .title {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(50px, 10px);
+  z-index: 1000;
+}
+.home .container .navbar ul li:hover {
+  background-color: #85ffbd;
+  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+  border-radius: 75px;
+  border: none;
+}
+
+.home .container .navbar ul li:nth-child(2):hover {
+  background-color: #fbda61;
+  background-image: linear-gradient(45deg, #fbda61 0%, #ff5acd 100%);
+}
+.home .container .navbar ul li:nth-child(3):hover {
+  background-color: #ffdee9;
+  background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
+}
+
+.home .container .navbar ul li:nth-child(4):hover {
+  background-color: #fad961;
+  background-image: linear-gradient(90deg, #fad961 0%, #f76b1c 100%);
+}
+.home .container .navbar ul li:nth-child(5):hover {
+  background-color: #ff3cac;
+  background-image: linear-gradient(
+    225deg,
+    #ff3cac 0%,
+    #784ba0 50%,
+    #2b86c5 100%
+  );
+}
+.home .container .navbar ul li:nth-child(6):hover {
+  background-color: #ffdee9;
+  background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
+}
+
+.home .container .navbar ul li a .title::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #ffff;
+  top: 14px;
+  left: -5px;
+  transform: rotate(45deg);
+}
+
+.home .container .navbar ul li a .hover img{
+  position: absolute;
+  bottom: -53px;
+  left: 815px;
+  height: 250px;
+  width: 250px;
+  transform: rotate(321deg);
+  opacity: 0;
+  visibility: hidden;
+}
+.home .container .navbar ul li a .hover1 img
+{
+  position: absolute;
+  top: 206px;
+  right: -339px;
+  height: 250px;
+  width: 250px;
+  transform: rotate(321deg);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.home .container .navbar ul li:hover a .hover img,
+.home .container .navbar ul li:hover a .hover1 img
+
+{
+  opacity: 1;
+  visibility: visible;
+  transition: 0.5s;
+  transform: translate(45%,-45%);
+} 
+
+
+.home .container .navbar ul li a .image::after
+{
+  content: 'k';
+  background: url(../images/food/non-veg/casey-lee-awj7sRviVXo-unsplash.jpg);
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  bottom: 50px;
+  right: 50px;
+  opacity: 0;
+  visibility: hidden;
+}
+.home .container .navbar ul li:hover a .image::before
+{
+  opacity: 1;
+  visibility: visible;
+  z-index: 1000;
+}
+

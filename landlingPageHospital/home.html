@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="firstpart">
+    </div>
+    <div class="secondpart">
+        <div class="navbar">
+            <div class="toggle" onclick="toggle()"></div>
+            <ul class="main-nav">
+                <li id="main">
+                    <a href="">Home</a>
+                </li>
+                <li id="main">
+                    <a href="">Book Vaccine</a>
+                </li>
+                <li id="main">
+                    <a href="">Check Status</a>
+                </li>
+                <li id="main">
+                    <a href="">feedback</a>
+                </li>
+            </ul>
+
+            <ul class="social-media">
+                <li>
+                    <img src="029-instagram.svg" alt="">
+                </li>
+                <li>
+                    <img src="036-facebook.svg" alt="">
+                </li>
+                <li>
+                    <img src="001-youtube.svg" alt="">
+                </li>
+                <li>
+                    <img src="008-twitter.svg" alt="">
+                </li>
+            </ul>
+        </div>
+        <div class="home">
+            <div class="section1">
+                <div class="heading">
+                    <h1>stay safe</h1>
+                    <h1>Stay indoor</h1>
+                </div>
+                <div class="image">
+                    <img src="2.png" alt="">
+                </div>
+            </div>
+            <div class="section2">
+                <ul>
+                    <li>
+                        <div class="counter" data-target="3000">0</div>
+                        <div class="data">Registered centers</div>
+                    </li>
+                    <li>
+                        <div class="counter" data-target="3000">0</div>
+                        <div class="data">Registered Vehicles</div>
+                    </li>
+                    <li>
+                        <div class="counter" data-target="3000">0</div>
+                        <div class="data">Successfull vaccination</div>
+                    </li>
+                    <li>
+                        <div class="counter" data-target="3000">0</div>
+                        <div class="data">Total Registrations</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="thirdpart"></div>
+
+    <script>
+
+        function toggle() {
+            var toggle = document.querySelector(".toggle");
+            var mainnav = document.querySelector(".main-nav");
+            var social = document.querySelector(".social-media");
+
+            toggle.classList.toggle("close");
+            mainnav.classList.toggle("main-nav-close");
+            social.classList.toggle("social-close");
+        }
+    </script>
+
+    <script>
+        const counters = document.querySelectorAll('.counter');
+        for (let n of counters) {
+            const updateCount = () => {
+                const target = + n.getAttribute('data-target');
+                const count = + n.innerText;
+                const speed = 5000;
+
+                const inc = target / speed;
+
+                if (count < target) {
+                    n.innerText = Math.ceil(count + inc);
+                    setTimeout(updateCount, 1);
+                } else {
+                    n.innerText = target;
+                }
+            }
+
+            updateCount();
+        }
+    </script>
+</body>
+
+</html>

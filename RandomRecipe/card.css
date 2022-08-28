@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.image {
+  background: #f2b705;
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
+  padding: 40px;
+  height: 100px;
+  width: 210px;
+  display: flex;
+  justify-content: center;
+}
+.image ion-icon {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 25px;
+}
+img {
+  width: 200px;
+  border-radius: 50%;
+  position: absolute;
+  top: 35px;
+}
+.name {
+  margin-top: 55px;
+  text-align: center;
+}
+.name h2 {
+  color: gray;
+  letter-spacing: 1.4px;
+  font-size: 1.7rem;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -26px;
+  background: rgb(240, 234, 215);
+  padding: 40px;
+  border-radius: 30px;
+  width: 210px;
+  padding-bottom: 20px;
+}
+
+.info-small {
+  display: flex;
+  color: gray;
+  font-size: 12px;
+  margin-top: 12px;
+}
+
+.time,
+.rating,
+.calorie {
+  margin: 0px 8px;
+}
+
+.time ion-icon {
+  color: rgb(42, 99, 163);
+  font-weight: bold;
+}
+
+.rating ion-icon {
+  color: #f2b705;
+}
+
+.calorie ion-icon {
+  color: rgb(218, 62, 62);
+}
+
+.addtocart {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  background: #e0dada;
+  border-radius: 25px;
+}
+
+.add {
+  background: #f2b705;
+  padding: 5px;
+  border-radius: 25px;
+  margin: 0px 2px;
+  display: flex;
+  align-items: center;
+}
+
+#price
+{
+  color: gray;
+}
+.add span {
+  margin: 0px 2px;
+}
+.price {
+  color: rgb(85, 80, 80);
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: -1px;
+  margin: 0px 10px;
+  letter-spacing: 1px;
+}
+.ingredient {
+  color: gray;
+  margin-top: 15px;
+}
+
+.ingredient h3 {
+  color: rgb(85, 80, 80);
+}
+.ingredients {
+  margin-top: 20px;
+}
+.ingredients span {
+  margin: 0px 5px;
+}
+
+.about {
+  color: gray;
+  margin-top: 15px;
+}
+.about h3 {
+  color: rgb(85, 80, 80);
+}
+.about p {
+  margin-top: 10px;
+  text-align: justify;
+}
+
+.order {
+  margin-top: 20px;
+  background: rgb(161, 153, 153);
+  height: 30px;
+  width: 75px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.order button {
+  background: transparent;
+  border: none;
+}
+
+
+.order ion-icon {
+  position: absolute;
+  bottom: 25px;
+  right: 30px;
+}
+
+.active
+{
+  letter-spacing: 2px;
+  transition: 0.2s ease-in-out;
+}
+
+.active-cont
+{
+  background: #f2b705;
+}

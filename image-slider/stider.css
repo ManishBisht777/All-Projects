@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background: rgb(40, 101, 194);
+}
+
+.slider
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.slider .slider-items .slide .img img
+{
+    display: block;
+}
+
+.slider .slider-items .slide
+{
+    display: none;
+}
+
+.slider .slider-items .slide.active
+{
+    display: block;
+    animation: animate 2s ease-in-out;
+}
+@keyframes animate
+{
+    0%
+    {
+        clip-path: circle(0px at center);
+    }
+    50%
+    {
+        clip-path: circle(500px at center);
+        
+    }
+    100%
+    {
+        clip-path: circle(1000px at center);
+    }
+}
+.slider .left , .slider .right
+{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    background: #000;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    line-height: 40px;
+}
+.slider .left:hover , .slider .right:hover
+{
+    color: #000;
+    background: #fff;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+.slider .left
+{
+    left: 30px;
+}
+.slider .right
+{
+    right: 30px;
+}
+.slider .slider-items .slide input[type="radio"]
+{
+    position: absolute;
+    z-index: 1000;
+    margin: 5px;
+    margin-bottom: 40px;
+    outline: none;
+    cursor: pointer;
+}

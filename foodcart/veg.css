@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Style+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.veg {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* background: rgb(20, 20, 20); */
+  background: url("vegbg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  font-size: 6rem;
+  font-family: "Roboto", sans-serif;
+  color: #f2b705;
+  font-weight: bold;
+}
+.item span {
+  transform: rotate(270deg);
+}
+.menu {
+  border: 5px double #f2b705;
+  height: fit-content;
+  margin-right: 50px;
+  margin-left: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-border {
+  border: dotted 3px #f2b705;
+  margin: 15px;
+  padding: 50px;
+}
+
+.title {
+  background: #f2b705;
+  padding: 0px 36px;
+  font-size: 2rem;
+  clip-path: polygon(100% 0%, 85% 50%, 100% 100%, 0 100%, 15% 50%, 0 0);
+  margin-top: -97px;
+}
+
+.title h2 {
+  font-family: "Style Script", cursive;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.menu-border h3 {
+  margin: 20px 0px;
+  font-family: "Style Script", cursive;
+  color: #f2b705;
+  letter-spacing: 3px;
+}
+
+.dish {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0px;
+  color: #eee4c8;
+  cursor: pointer;
+}
+
+.dish span {
+  font-family: "Roboto", sans-serif;
+}
+#price {
+  color: #ebcc77;
+  font-family: "Style Script", cursive;
+}

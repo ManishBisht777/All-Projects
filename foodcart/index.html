@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="card.css" />
+    <link rel="stylesheet" href="veg.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="toggle" id="toggle" onclick="toggle()"></div>
+    <nav id="navbar" class="navbar">
+      <div class="nav-menu" id="menu">
+        <h3>Menu</h3>
+        <ul>
+          <li><a href="#">Veg</a></li>
+          <li><a href="#">Non-Veg</a></li>
+          <li><a href="#">Appetizer</a></li>
+          <li><a href="#">Dessert</a></li>
+        </ul>
+      </div>
+      <div class="display-image">
+        <img src="img1.jpg" alt="" />
+      </div>
+      <div class="handles">
+        <ion-icon name="logo-facebook"></ion-icon>
+        <ion-icon name="logo-instagram"></ion-icon>
+      </div>
+    </nav>
+    <section id="home">
+      <h3>Hotel Baratie</h3>
+      <div class="about">
+        <p>
+          A restaurant (sometimes known as a diner) is a place where cooked food
+          is sold to the public, and where people sit down to eat it. It is also
+          a place where people go to enjoy the time and to eat a meal. These
+          restaurants serve fast food, that is, inexpensive food, prepared and
+          served quickly.
+        </p>
+        <button id="order-now">Order Now</button>
+      </div>
+    </section>
+
+    <div class="veg">
+      <div class="item">
+        <span>G</span>
+        <span>E</span>
+        <span>V</span>
+      </div>
+
+      <div class="menu">
+        <div class="menu-border">
+          <div class="title">
+            <h2>Menu</h2>
+          </div>
+          <h3>Ê Starter</h3>
+          <div class="dish-name">
+            <div class="dish" id="dish">
+              <span id="dish-name">Dish 1</span>
+              <span id="price">$ 20</span>
+            </div>
+            <div class="dish" id="dish">
+              <span id="dish-name">Dish 2</span>
+              <span id="price">$ 50</span>
+            </div>
+            <div class="dish" id="dish">
+              <span id="dish-name">Dish 3</span>
+              <span id="price">$ 120</span>
+            </div>
+            <div class="dish" id="dish">
+              <span id="dish-name">Dish 4</span>
+              <span id="price">$ 330</span>
+            </div>
+          </div>
+          <h3>Ê Main Course</h3>
+          <div class="dish-name">
+            <div class="dish" id="dish">
+              <span id="dish-name">Dish 5</span>
+              <span id="price">$ 230</span>
+            </div>
+            <div class="dish" id="dish">
+              <span id="dish-name">Dish 6</span>
+              <span id="price">$ 20</span>
+            </div>
+            <div class="dish" id="dish">
+              <span id="dish-name">Dish 7</span>
+              <span id="price">$ 123</span>
+            </div>
+            <div class="dish" id="dish">
+              <span id="dish-name">Dish 8</span>
+              <span id="price">$ 340</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image">
+          <ion-icon name="heart-outline"></ion-icon>
+          <img src="img2.png" alt="" />
+        </div>
+        <div class="info">
+          <div class="name">
+            <h2 id="name">Product Card</h2>
+          </div>
+
+          <div class="info-small">
+            <div class="time">
+              <ion-icon name="time-outline"></ion-icon>
+              50 min
+            </div>
+            <div id="rating" class="rating">
+              <ion-icon name="star-outline"></ion-icon>
+              <span id="rating-card"> 4.5 </span>
+            </div>
+            <div id="calorie" class="calorie">
+              <ion-icon name="flame-outline"></ion-icon>
+              325 Kcal
+            </div>
+          </div>
+
+          <div class="addtocart">
+            <div id="price-card" class="price">Price</div>
+            <div class="add">
+              <ion-icon name="remove-outline" onclick="decrease()"></ion-icon>
+              <span id="noofitem">0</span>
+              <ion-icon name="add-outline" onclick="increase()"></ion-icon>
+            </div>
+          </div>
+
+          <div class="ingredient">
+            <h3>Ingredients</h3>
+            <div class="ingredients">
+              <span>onion</span>
+              <span>noodles</span>
+              <span>Orange</span>
+              <span>pickles</span>
+            </div>
+          </div>
+          <div class="about">
+            <h3>About</h3>
+            <p id="about-card">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor
+              recusandae
+            </p>
+          </div>
+          <div class="order">
+            <button id="order">Order</button>
+            <ion-icon name="bag-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function toggle() {
+        var navbar = document.getElementById("navbar");
+        var toggle = document.getElementById("toggle");
+        toggle.classList.toggle("close");
+        navbar.classList.toggle("active");
+      }
+    </script>
+    <script type="text/javascript" src="veg.js"></script>
+    <script type="text/javascript" src="data.json"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+{
+  "veg":[
+    {
+      "name": "Dish 1",
+      "price": 370,
+      "about": "This is out dish 1. Made with home made spices",
+      "time": 30,
+      "rating": 4.9,
+      "calorie": 390,
+      "incart": 0
+    },
+    {
+      "name": "Dish 2",
+      "price": 320,
+      "about": "This is out dish 2. Made with home made spices",
+      "time": 30,
+      "rating": 4.0,
+      "calorie": 390,
+      "incart": 0
+    },
+    {
+      "name": "Dish 3",
+      "price": 70,
+      "about": "This is out dish 3. Made with home made spices",
+      "time": 30,
+      "rating": 3.5,
+      "calorie": 390,
+      "incart": 0
+    },
+    {
+      "name": "Dish 4",
+      "price": 170,
+      "about": "This is out dish 4. Made with home made spices",
+      "time": 30,
+      "rating": 4.5,
+      "calorie": 390,
+      "incart": 0
+    },
+    {
+      "name": "Dish 5",
+      "price": 170,
+      "about": "This is out dish 5. Made with home made spices",
+      "time": 30,
+      "rating": 4.5,
+      "calorie": 390,
+      "incart": 0
+    },
+    {
+      "name": "Dish 6",
+      "price": 170,
+      "about": "This is out dish 6. Made with home made spices",
+      "time": 30,
+      "rating": 4.5,
+      "calorie": 390,
+      "incart": 0
+    },
+    {
+      "name": "Dish 7",
+      "price": 170,
+      "about": "This is out dish 7. Made with home made spices",
+      "time": 30,
+      "rating": 4.5,
+      "calorie": 390,
+      "incart": 0
+    },
+    {
+      "name": "Dish 8",
+      "price": 170,
+      "about": "This is out dish 8. Made with home made spices",
+      "time": 30,
+      "rating": 4.5,
+      "calorie": 390,
+      "incart": 0
+    }
+  ]
+}

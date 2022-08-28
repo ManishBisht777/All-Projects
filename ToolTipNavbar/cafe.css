@@ -1,0 +1,306 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Kiwi Maru", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  display: flex;
+  flex-direction: row-reverse;
+  text-align: center;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  background: url(../images/coffee.jpg) center no-repeat;
+  background-size: cover;
+}
+.navbar {
+  position: relative;
+  right: 200px;
+  background: rgb(230 176 24);
+  border-bottom: 2px solid rgba(241, 236, 236, 0.2);
+  border-right: 2px solid rgba(241, 236, 236, 0.2);
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 30%);
+}
+
+.navbar ul li {
+  list-style: none;
+}
+.navbar ul li a .icon img {
+  height: 50px;
+  width: 50px;
+  padding: 10px 10px;
+}
+
+.navbar ul li a .logo img {
+  height: 50px;
+  width: 50px;
+  padding: 10px 10px;
+}
+
+.navbar ul li a .title {
+  position: absolute;
+  left: 79px;
+  width: 117px;
+  background-color: #faaca8;
+  background-image: linear-gradient(19deg, #faaca8 0%, #ddd6f3 100%);
+  border-radius: 10px;
+  padding: 7px 5px;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 30%);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  color: #000;
+}
+
+.navbar ul li:hover a .title {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(50px, 10px);
+  z-index: 1000;
+}
+
+.navbar ul li:nth-child(2) a .title {
+  background-color: #85ffbd;
+  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+}
+
+.navbar ul li:nth-child(3) a .title {
+  background-color: #fbab7e;
+  background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+}
+
+.navbar ul li:nth-child(4) a .title {
+  background-color: #74ebd5;
+  background-image: linear-gradient(90deg, #74ebd5 0%, #9face6 100%);
+}
+
+.navbar ul li a .title::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #ffff;
+  top: 14px;
+  left: -5px;
+  transform: rotate(45deg);
+}
+
+.name {
+  margin: 10px;
+  width: 90%;
+  padding: 161px;
+}
+
+.name .cafe {
+  margin: 10px;
+}
+
+.name .cafe h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 3rem;
+}
+.name .desc p {
+  color: #ffff;
+  text-shadow: #fff;
+  font-weight: 400;
+  margin: 10px;
+}
+
+.cafe-menu {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #ddd6f3;
+}
+
+.cafe-menu .menu h2 {
+  padding: 10px;
+  font-size: 3rem;
+  color: brown;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+.cafe-menu .items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cafe-menu .cards {
+  position: relative;
+  width: 300px;
+  padding: 10px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin: 10px;
+}
+.cafe-menu .cards .image img {
+  height: 100px;
+  padding: 30px;
+}
+.cafe-menu .cards .info p {
+  margin-bottom: 10px;
+  font-size: medium;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.cafe-menu .cards .info .rating {
+  margin-bottom: 10px;
+}
+
+.cafe-menu .cards .info .rating img {
+  height: 20px;
+  margin: 5px;
+}
+
+.cafe-menu .cards .info button {
+  height: 40px;
+  width: 100px;
+  border-radius: 15px;
+  background: #9face6;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.cafe-menu .cards .info button img {
+  height: 20px;
+}
+
+.Testomonials {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #ddd6f3;
+}
+
+.Testomonials .about h2 {
+  font-weight: bolder;
+  font-size: 3rem;
+}
+
+.Testomonials .person .cards {
+  position: relative;
+  width: 300px;
+  padding: 10px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin: 10px;
+}
+.Testomonials .person {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.Testomonials .person .cards .image img {
+  height: 100px;
+}
+
+.contact-us {
+  position: relative;
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
+  background: #000;
+}
+.contact-us form {
+    margin: 50px;
+  width: 100%;
+  background: rgb(17, 17, 17);
+  box-shadow: 0 8px 32px 0 rgba(250, 251, 252, 0.37);
+}
+
+.contact-us .row100 {
+  display: flex;
+  width: 100%;
+}
+.contact-us .row100 .inputbx50 {
+  width: 50%;
+  margin: 0 20px;
+}
+.contact-us .row100 .inputbx100 {
+  width: 100%;
+  margin: 0 20px;
+}
+.contact-us .row100 textarea,
+.contact-us .row100 input {
+  position: relative;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  width: 100%;
+  padding-top: 10px 0;
+  outline: none;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 20px 0;
+  resize: none;
+}
+
+.contact-us .row100 textarea {
+  height: 100px;
+}
+.contact-us .row100 textarea::placeholder,
+.contact-us .row100 input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-us .row100 input[type="submit"] {
+  background: #fff;
+  color: #000;
+  max-width: 100px;
+  margin: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 500;
+}
+.sci {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+.sci ul {
+  display: flex;
+  flex-direction: row;
+}
+.sci ul li {
+  list-style: none;
+}
+.sci ul li a {
+  text-decoration: none;
+}
+.sci li a img {
+  height: 50px;
+  width: 50px;
+  margin: 20px;
+}
+.sci li a img:hover {
+  opacity: 0.5;
+}
+
+.copyright {
+  color: #fff;
+}
+.copyright a {
+  color: #fff;
+}

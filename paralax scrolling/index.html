@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo">Jungle</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </header>
+    <section>
+        <h2 id="text"><span>It's time for new</span><br>Adventure</h2>
+        <img src="bird1.png" id="bird1">
+        <img src="bird2.png" id="bird2">
+        <img src="forest.png"id="forest">
+        <a href="#" id="btn">Explore</a>
+        <img src="rocks.png" id="rocks">
+        <img src="water.png" id="water">
+    </section>
+    <div class="sec">
+        <h2>Parallax Scrolling Effect</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis iste, necessitatibus veniam architecto inventore animi assumenda consectetur molestiae voluptas quam beatae vero ducimus at quaerat laudantium voluptates quia eum cupiditate explicabo minus porro sed magni corrupti? Illo ullam quidem, animi earum suscipit dolore nostrum labore! Beatae, fugit quasi ullam quas error, eaque eligendi modi repellendus placeat qui consequatur delectus illo reprehenderit! Sit laborum, eveniet vitae omnis placeat voluptates beatae accusantium quo iusto, ut aut asperiores praesentium animi dolor modi quisquam vero neque. Mollitia pariatur laborum similique non nemo aliquid iusto, repudiandae rem quo blanditiis minus repellat aliquam corrupti esse voluptatem soluta facere ipsa explicabo voluptate possimus alias illo molestiae fuga quam. Alias incidunt aperiam quo et? Praesentium mollitia beatae laudantium officia. Atque, nesciunt dignissimos. Soluta sint esse, eius eaque, excepturi rem cumque <br><br> vero, culpa maxime aliquid a? Delectus aliquid sapiente, earum nisi vero quos iure iste illo, doloribus eveniet, inventore blanditiis. Quas facilis ex, autem porro distinctio, quia eaque harum similique tempore suscipit pariatur nobis, eveniet deserunt molestiae delectus. Odit officia nobis vitae dicta accusantium, consequatur corrupti <br><br> sed iusto amet magnam porro provident molestiae nihil asperiores mollitia eaque unde dolores, doloremque aliquid voluptates explicabo inventore. Quisquam at blanditiis, recusandae fugiat atque illo maiores ex. Ad ipsa, illo repudiandae porro illum sequi ea maiores optio nesciunt eaque excepturi accusamus omnis rerum voluptatem officia reiciendis necessitatibus natus quos ipsum quo ut culpa neque veritatis. Unde ex, ipsam dolores quod earum quos blanditiis <br><br> hic, placeat accusantium quis ducimus corporis pariatur ut! Distinctio amet facilis rerum hic saepe. Minima eaque quisquam molestiae non modi vero enim dignissimos similique fuga expedita adipisci repellat magnam id, ipsa excepturi? Eaque tenetur delectus quia ex quae, illum quaerat exercitationem placeat, vel quod quis, suscipit rerum unde ipsum. Nemo unde vero animi molestiae illo a reiciendis, quisquam quae natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quis explicabo, quo vero fugit cumque, officiis soluta mollitia distinctio deleniti deserunt laborum consequatur magni inventore reiciendis tempora maxime dicta tenetur sed dignissimos voluptates, veniam molestiae sint ipsa. Quia esse ratione, facilis non delectus aspernatur officiis dolorem, perspiciatis libero reprehenderit reiciendis exercitationem adipisci ipsum nihil dolores repellat similique. Tenetur enim ad ratione quaerat facilis repellat adipisci totam sit non incidunt exercitationem hic placeat, eum molestiae illum perspiciatis vero cupiditate alias obcaecati debitis sequi. Magni dolores minus nemo in maxime, quo esse iure eaque voluptates obcaecati itaque aperiam harum quos praesentium ipsum!</p>
+    </div>
+
+    <script>
+        let text = document.getElementById('text');
+        let bird1 = document.getElementById('bird1');
+        let bird2 = document.getElementById('bird2');
+        let btn = document.getElementById('btn');
+        let rocks = document.getElementById('rocks');
+        let forest = document.getElementById('forest');
+        let water = document.getElementById('water');
+        let header = document.getElementById('header');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+
+            text.style.top = 50 + value * -0.5 +'%'; 
+            bird1.style.top =  value * -1.5 +'px';
+            bird1.style.left =  value * 2 +'px'; 
+            bird2.style.top =  value * -0.5 +'px';
+            bird2.style.left =  value * -5 +'px'; 
+            btn.style.marginTop = value * -0.5 +'px'; 
+            text.style.top = value * 1.5 +'px'; 
+            rocks.style.top = value * -0.12 +'px'; 
+            forest.style.top =  value * -0.25 +'px';
+            header.style.top = value*0.5 +'px'; 
+
+        })
+
+    </script>
+</body>
+</html>
