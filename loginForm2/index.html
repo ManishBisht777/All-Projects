@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="conatiner">
+      <div class="box">
+        <div class="same signin">
+          <h2>Already Have An Account ?</h2>
+          <button class="signinbtn" type="submit">Signin</button>
+        </div>
+        <div class="same signup">
+          <h2>Don't Have an Account ?</h2>
+          <button class="signupbtn" type="submit">Signup</button>
+        </div>
+        <div class="form">
+          <div class="sameform signinform">
+            <form action="">
+                <h3>SignIn</h3>
+            <input type="text" placeholder="UserName" />
+            <input type="password" placeholder="Password" />
+            <input type="submit" type="submit" value="Login" />
+            <a href="#" class="forgot">Forgot Password</a>
+            </form>
+          </div>
+          <div class="sameform signupform">
+            <form action="">
+                <h3>Signup</h3>
+            <input type="text" placeholder="UserName" />
+            <input type="text" placeholder="Email Id" />
+            <input type="password" placeholder="Password" />
+            <input type="password" placeholder="Confirm Password" />
+            <input type="submit" type="submit" value="Register" />
+            </form>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const signupbtn = document.querySelector(".signupbtn");
+      const signinbtn = document.querySelector(".signinbtn");
+      const form = document.querySelector(".form");
+      const sameform = document.querySelector(".sameform")
+
+      signupbtn.onclick = function () {
+        form.classList.add("active");
+        sameform.classList.add("active2");
+      };
+
+      signinbtn.onclick = function () {
+        form.classList.remove("active");
+        sameform.classList.remove("active2");
+
+      };
+    </script>
+  </body>
+</html>

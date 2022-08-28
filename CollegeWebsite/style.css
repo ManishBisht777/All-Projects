@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+/* header styling start */
+
+header {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  color: rgb(255, 255, 255);
+}
+
+.logo {
+  margin: 20px;
+  font-size: 30px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-family: "Balsamiq Sans", cursive;
+}
+
+.cname {
+  position: relative;
+  margin: 20px;
+  letter-spacing: 1px;
+  font-size: 30px;
+  background: #111;
+  z-index: 100;
+}
+
+.login {
+  margin: 20px;
+  background: purple;
+  border: 1px solid purple;
+  padding: 10px 30px;
+  border-radius: 3px;
+  color: #fff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.login:hover {
+  background: transparent;
+  transition: 0.3s;
+}
+
+/* navbar styling */
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: rgb(204 179 59);
+  height: 10vh;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+nav ul li {
+  margin: 10px 20px;
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* container styling */
+.container {
+  display: flex;
+  position: relative;
+  height: 60vh;
+  width: 100%;
+}
+.message {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  /* background: url(bg10.jpg); */
+  background-color: rgba(0, 0, 0, 0.712);
+  background-size: cover;
+  background-blend-mode: darken;
+}
+.message h3 {
+  font-size: 30px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.message p {
+  width: 500px;
+  margin-top: 40px;
+  font-size: 14px;
+  color: rgb(184, 183, 183);
+}
+
+.message button {
+  padding: 10px 20px;
+  border: 1px solid purple;
+  background: purple;
+  color: rgb(255, 255, 255);
+  border-radius: 3px;
+  margin-top: 50px;
+}
+
+.notice {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  /* background: url(bg7.jpg); */
+  background-color: rgba(0, 0, 0, 0.829);
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+.notice h3 {
+  font-size: 30px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.notice ul {
+  margin-top: 30px;
+  width: 100%;
+  justify-self: flex-start;
+  margin-left: 50px;
+}
+.notice ul li {
+  list-style: none;
+  margin: 20px 0px;
+  color: rgb(206, 206, 206);
+  margin: 20px 10px;
+}
+.notice ul li span {
+  color: #dea800;
+  letter-spacing: 1px;
+}
+
+/* gallery styling */
+.gallery {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url(bg13.jpg);
+  background-size: cover;
+}
+.gallery h3 {
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  letter-spacing: 1px;
+}
+.box {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box .image {
+  width: 30%;
+  height: 85%;
+  margin: 20px;
+  background: purple;
+  position: relative;
+}
+
+.box .image::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0);
+  clip-path: polygon(100% 0, 60% 0, 100% 40%);
+}
+/* footer styling */
+footer {
+  background: #111;
+  padding: 15px 23px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+footer span a {
+  color: crimson;
+  text-decoration: none;
+}
+
+.foot {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.foot1 {
+  margin: 30px;
+}
+.foot2 {
+  margin: 30px;
+}
+.foot2 .text {
+  font-size: 30px;
+}
+
+.foot2 .field {
+  margin: 10px;
+}
+footer ul li {
+  list-style: none;
+  margin: 4px;
+}
+.foot1 ul {
+  margin-top: 20px;
+}
+.foot1 ul li {
+  margin: 10px;
+}
+.foot1 ul li a {
+  color: rgb(231, 208, 79);
+}
+
+footer input {
+  background: transparent;
+  border: none;
+  color: #fff;
+}
+footer span a:hover {
+  text-decoration: underline 2px solid white;
+  transition: 0.3s;
+}
+
+footer button {
+  background: #97d9e1;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-top: 40px;
+  border: 1px solid #97d9e1;
+  letter-spacing: 1px;
+}
+
+footer button a {
+  text-decoration: none;
+  color: #000;
+}
+
+footer button:hover {
+  transition: 0.3s;
+  cursor: pointer;
+  background: transparent;
+  color: #fff;
+}
+
+.foot3 ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
